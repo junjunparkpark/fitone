@@ -4,7 +4,8 @@
   <title>BestPrice - Products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="javajam.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -26,53 +27,60 @@
   </ul>
   
   <div id="wrapper">
-  
-  <main>
-    <div id="heromugs"></div>
-    <h2>Coffee at JavaJam</h2>
-    <p>
-       Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste, the caffeine! Join our Mug Club
-      and get a 10% discount on each cup of coffee you purchase — ask the barista for details.
-    </p>
-    <dl>
-      <dt>
-        <strong>Just Java</strong>
-      </dt>
-      <dd>
-        Regular house blend, decaffeinated coffee, or flavor of the day.
-      </dd>
-      <dd>
-        Endless Cup $2.00
-      </dd>
+    <header class="card container">
+      <h1>
+        Latest Deals
+      </h1>
+    </header>
 
-      <dt>
-        <strong>Cafe au Lait</strong>
-      </dt>
-      <dd>
-        House blended coffee infused into a smooth, steamed milk.
-      </dd>
-      <dd>
-        Single $2.00 Double $3.00
-      </dd>
+    <main>
+      <section class="row">
+        <div class="card container deal-link">
+          <a href="https://slickdeals.net/?adobeRef=4a556c7a243411e8bcbc22945b031f960000&afsrc=1&trd=See%20Deal&sdtid=11351339&tid=11351339&pno=371387&pv=4a58fe12243411e8bcbc22945b031f96&au=59e6650823bd11e890d1b2322e436896&attr_track=Meta%3ACheckout%3Anot%20eligible">
+            <h2>Amazon</h2>
+            <img src="https://static.slickdealscdn.com/attachment/1/2/2/5/7/4/7/2/200x200/6702547.thumb" alt="Focusrite iTrack Pocket Stereo Image">
+            <p>Focusrite iTrack Pocket Stereo Microphone & Guitar Input for iPhone</p>
+            <span class="previous-price">$70</span>
+            <span class="current-price">$10</span>
+          </a>
+        </div>
 
-      <dt>
-        <strong>Iced Cappuccino</strong>
-      </dt>
-      <dd>
-        Sweetened espresso blended with icy-cold milk and served in a chilled glass.
-      </dd>
-      <dd>
-        Single $4.75 Double $5.75
-      </dd>
-    </dl>
-  </main>
-  <br/>
-  
-  <footer>
-    Copyright © JavaJam Coffee House
+        <div class="card container deal-link">
+          <a href="https://slickdeals.net/?afsrc=1&trd=See%20Deal&sdtid=11350843&tid=11350843&pno=371375&pv=60d75812243611e8ab817e1b23435637&au=59e6650823bd11e890d1b2322e436896">
+            <h2>REI</h2>
+            <img src="https://static.slickdealscdn.com/attachment/8/2/1/8/5/7/200x200/6704687.thumb" alt="Men's Moab Polar Waterproof Boots">
+            <p>REI Extra 25% Off Clearance Items: Merrell Men's Moab Polar Waterproof Boots</p>
+            <span class="previous-price">$60</span>
+            <span class="current-price">$45</span>
+          </a>
+        </div>
+
+        <div class="card container deal-link">
+          <a href="https://slickdeals.net/?afsrc=1&trd=See%20Deal&sdtid=11354035&tid=11354035&pno=371371&pv=71d0d5ee243611e8bca1aeb9af6f605e&au=59e6650823bd11e890d1b2322e436896">
+            <h2>Dell Small Business</h2>
+            <img src="https://static.slickdealscdn.com/attachment/5/5/8/2/7/0/5/200x200/6704047.thumb" alt="Dell 14-inch Laptop">
+            <p>Dell Inspiron 14 7472 Laptop: Intel Core i7-8550, 14", 8GB DDR4, 1TB HDD</p>
+            <span class="previous-price">$699</span>
+            <span class="current-price">$580</span>
+          </a>
+        </div>
+      </section>
+    </main>
     <br/>
-    For general inquiries, please visit our <a href="contact.html">Contact Page</a> or reach us at <a href="mailto:jun.park@du.edu?Subject=ICT%20Homework">jun.park@du.edu</a>
-  </footer>
+  
+    <footer>
+      <div class="footer-notes">
+        For general inquiries, please visit our
+        <a href="contact.html">Contact Page</a> or reach us at
+        <a href="mailto:jun.park@du.edu?Subject=ICT%20Homework">jun.park@du.edu</a>
+        <br/>
+        <br/>
+    
+        <div id="last-updated">
+          <!-- INSERT LAST MODIFIED DATE HERE -->
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
