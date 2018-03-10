@@ -23,6 +23,10 @@ h4 {
   font-size: 1.2em;
 }
 
+p {
+  height: 50px;
+}
+
 
 header {
   text-align: left;
@@ -39,6 +43,10 @@ figcaption {
   text-align: center;
   font-weight: bold;
   color: green;
+}
+
+section {
+  display: inline;
 }
 
 
@@ -179,7 +187,7 @@ ul.breadcrumb li a:hover {
 
 section .card {
   height: 400px;
-  margin: 10px !important;
+  
 }
 
 
@@ -199,9 +207,9 @@ section .card {
 }
 
 .deal-link {
-  float: left;
   width: 30%;
   text-align: center;
+  display: inline-block;
 }
 
 .deal-link a {
@@ -293,11 +301,13 @@ section .card {
   }
 
   .card {
-    margin: 20px 10px;
+    text-align: center;
+    float: none;
+
   }
 
   .deal-link {
-    width: 45%;
+    width: 35%;
   }
 }
 
@@ -350,9 +360,7 @@ section .card {
     padding-top: 1px;
   }
 
-  main .card {
-    margin: 0px 10px;
-  }
+
   section .card img {
     width: 150px;
   }
