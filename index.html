@@ -12,20 +12,32 @@
   <script src="main.js"></script>
 </head>
 <body>
+  <nav id="main-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="products.html">Products</a>
+    <a href="travel.html">Travel</a>
+    <a href="contact.html">Contact</a>
+    <a href="submit.html">Submit a Deal</a>
+  </nav>
+
+  <ul class="breadcrumb">
+    <li>
+      <a href="index.html">BestPrice</a>
+    </li>
+    <li>
+      Home
+    </li>
+  </ul>
+
   <div id="wrapper">
     <header>
       <h1>
         BestPrice!
       </h1>
+      <h4>
+        Home Page
+      </h4>
     </header>
-
-    <nav id="main-nav">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="travel.html">Travel</a>
-      <a href="contact.html">Contact</a>
-      <a href="submit.html">Submit a Deal</a>
-    </nav>
 
     <main>
 
@@ -46,17 +58,19 @@
   </div>
 
   <script>
-    // $(document).ready(function () {
-    //   $("#last-updated").on('click', function() {
-    //       var nav = document.getElementById("main-nav");
-    //       if (nav.className === "topnav") {
-    //         nav.className += " responsive";
-    //       } else {
-    //         nav.className = "topnav";
-    //       }
-    //     }
-    //   })
-    // });
+    document.addEventListener("DOMContentLoaded", function (event) { 
+      // $("#last-updated").on('click', function() {
+      //     var nav = document.getElementById("main-nav");
+      //     if (nav.className === "topnav") {
+      //       nav.className += " responsive";
+      //     } else {
+      //       nav.className = "topnav";
+      //     }
+      //   }
+      // })
+      var x = location.pathname;
+      console.log('PATHNAME ---> ', x);
+    });
   </script>
 
 </body>
