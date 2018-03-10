@@ -26,8 +26,7 @@ h4 {
 
 header {
   text-align: left;
-  margin-top: 30px;
-  height: 100px;
+  height: 120px;
 }
 
 /*/----- NAVIGATION ------/*/
@@ -117,8 +116,34 @@ ul.breadcrumb li a:hover {
   overflow: auto;
 }
 
+.previous-price {
+  color: red;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.current-price {
+  color: #4285EF;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.deal-link {
+  width: 30%;
+  text-align: center;
+}
+
+.deal-link a {
+  text-decoration: none;
+}
+
+.deal-link p {
+  color: black;
+}
+
 
 .card {
+  margin: 30px 0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: white;
@@ -154,6 +179,7 @@ ul.breadcrumb li a:hover {
 
   header {
     border-bottom: 5px solid #FEF6C2;
+    display: block;
   }
 
   h1 {
@@ -195,7 +221,7 @@ ul.breadcrumb li a:hover {
 
   main {
     padding: 0;
-    margin: 0;
+    margin: 30px 30px;
     font-size: 90%;
   }
 }
