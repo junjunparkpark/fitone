@@ -243,15 +243,12 @@ section .card {
     margin: 0 auto;
     padding: 0;
     box-shadow: none;
+    width: 100%;
   }
 
   header {
     display: block;
     text-align: center;
-  }
-
-  section .card img {
-    width: 100px;
   }
 
   h1 {
@@ -285,15 +282,14 @@ section .card {
     margin: 0;
   }
 
-  #heroroad, #heromugs, #heroguitar {
-    margin: 0;
-    padding: 0;
-  }
-
   main {
     padding: 0;
-    margin: 30px;
+    margin: 0 auto;
     font-size: 90%;
+  }
+  
+  main section {
+    text-align:center;
   }
 
   .card {
@@ -307,9 +303,10 @@ section .card {
 
 
 @media only screen and (max-width: 768px) {
-  header {
-    height: 128px;
+  header.card {
+    height: 100px;
   }
+
 
   h1 {
     font-size: 2em;
@@ -353,6 +350,13 @@ section .card {
     padding-top: 1px;
   }
 
+  main .card {
+    margin: 0px 10px;
+  }
+  section .card img {
+    width: 150px;
+  }
+
   h2 {
     padding-top: 0.5em;
     padding-right: 0;
@@ -379,4 +383,11 @@ section .card {
   #mobile { display: inline; }
   #desktop { display: none; }
 
+}
+
+
+@media only screen and (max-width: 600px) {
+  .deal-link {
+    width: 90%;
+  }
 }
