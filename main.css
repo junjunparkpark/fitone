@@ -5,10 +5,13 @@
 html {
   background-color: #F1F1F1;
   font-family: 'Open Sans', sans-serif;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   margin: 0;
+  
 }
 
 h1 {
@@ -24,7 +27,7 @@ h4 {
 }
 
 p {
-  height: 50px;
+  height:50px
 }
 
 
@@ -45,18 +48,14 @@ figcaption {
   color: green;
 }
 
-section {
-  display: inline;
-}
-
 
 footer {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 120px;
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
   margin: 0 !important;
   background-color: #333 !important;
   color: #f2f2f2;
@@ -149,11 +148,6 @@ ul.breadcrumb li a:hover {
   max-width: 1280px;
 }
 
-#mobile { display: none; }
-
-#desktop { display: inline; }
-
-
 .active {
   background-color: #4285EF;
   color: white;
@@ -187,7 +181,6 @@ ul.breadcrumb li a:hover {
 
 section .card {
   height: 400px;
-  
 }
 
 
@@ -251,7 +244,7 @@ section .card {
     margin: 0 auto;
     padding: 0;
     box-shadow: none;
-    width: 100%;
+    width: 90%;
   }
 
   header {
@@ -303,11 +296,10 @@ section .card {
   .card {
     text-align: center;
     float: none;
-
   }
 
   .deal-link {
-    width: 35%;
+    width: 45%;
   }
 }
 
@@ -316,7 +308,6 @@ section .card {
   header.card {
     height: 100px;
   }
-
 
   h1 {
     font-size: 2em;
@@ -329,6 +320,7 @@ section .card {
   nav a.icon {
     float: right;
     display: block;
+    font-size: 15px !important;
   }
   
   nav {
@@ -358,6 +350,7 @@ section .card {
 
   main {
     padding-top: 1px;
+    text-align: center;
   }
 
 
@@ -377,6 +370,10 @@ section .card {
     font-size: 12px;
   }
 
+  #wrapper {  
+    width: 100%;
+  }
+
   .details {
     padding-left: 0;
     padding-right: 0;
@@ -386,16 +383,20 @@ section .card {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
-
-
-  #mobile { display: inline; }
-  #desktop { display: none; }
-
 }
 
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+    padding-left: 0;
+  }
+
   .deal-link {
     width: 90%;
+  }
+
+  .deal-link img {
+    width: 80px;
   }
 }
