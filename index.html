@@ -8,7 +8,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  
+
   <script src="main.js"></script>
 </head>
 <body>
@@ -19,55 +19,23 @@
       </h1>
     </header>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="products.html">Products</a>
-        </li>
-        <li>
-          <a href="travel.html">Travel</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-        <li>
-          <a href="submit.html">Submit a Deal</a>
-        </li>
-      </ul>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="travel.html">Travel</a>
+      <a href="contact.html">Contact</a>
+      <a href="submit.html">Submit a Deal</a>
     </nav>
 
     <main>
-      <div id="heroroad"></div>
-      <h2>Follow the Winding Road to JavaJam</h2>
-      <p>
-        We’re a little out of the way, but take a drive down Route 42 to JavaJam today! Indulge in our locally roasted free-trade
-        coffee and home-made pastries. You’ll feel right at home at JavaJam!
-      </p>
 
-      <h3>JavaJam Coffee House features:</h3>
-      <ul>
-        <li>Specialty Coffee and Tea</li>
-        <li>Bagels, Muffins, and Organic Snacks</li>
-        <li>Music and Poetry Readings</li>
-        <li>Open Mic Nights</li>
-      </ul>
-      <div>
-        54321 Route 42
-        <br/> Ellison Bay, WI 54210
-        <br/>
-        <a id="mobile" href="tel:888-555-5555">888-555-5555</a>
-        <span id="desktop">888-555-5555</span>
-      </div>
     </main>
     <br/>
 
     <footer>
-      Copyright © JavaJam Coffee House
+      Copyright © Jun Park
       <br/>
-      <a href="mailto:jun.park@du.edu?Subject=ICT%20Homework">jun.park@du.edu</a>
+        <a href="mailto:jun.park@du.edu?Subject=Contact%20ICT%20Project">jun.park@du.edu</a>
       <br/>
       <br/>
 
@@ -78,9 +46,17 @@
   </div>
 
   <script>
-    $(document).ready(function () {
-      $("#last-updated").html("This page was last modified on: " + document.lastModified);
-    });
+    // $(document).ready(function () {
+    //   $("#last-updated").on('click', function() {
+    //       var nav = document.getElementById("main-nav");
+    //       if (nav.className === "topnav") {
+    //         nav.className += " responsive";
+    //       } else {
+    //         nav.className = "topnav";
+    //       }
+    //     }
+    //   })
+    // });
   </script>
 
 </body>
