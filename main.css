@@ -29,6 +29,19 @@ header {
   height: 120px;
 }
 
+
+figure img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+
 footer {
   position: absolute;
   left: 0;
@@ -169,7 +182,7 @@ ul.breadcrumb li a:hover {
 
 
 .card {
-  margin: 30px 10px;
+  margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color: white;
@@ -181,12 +194,11 @@ ul.breadcrumb li a:hover {
 
 section .card {
   height: 400px;
+  margin: 10px !important;
 }
 
 .center {
-  margin: auto;
-  width: 40%;
-  padding: 10px;
+  text-align: center !important;
 }
 
 .container {
