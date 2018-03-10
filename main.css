@@ -59,11 +59,15 @@ footer a {
   color: #f2f2f2;
 }
 
+time {
+  color: rgb(168, 201, 255);
+}
+
 .footer-notes {
   margin: 30px;
 }
 
-/*/----- NAVIGATION ------/*/
+/*/------ NAVIGATION ------/*/
 
 nav {
   background-color: #333;
@@ -90,13 +94,19 @@ nav .icon {
 }
 
 
-/*/----- BREADCRUMB NAVIGATION ------/*/
+/*/------ BREADCRUMB NAVIGATION ------/*/
 
 ul.breadcrumb {
   margin-top: 0;
   padding: 10px 16px;
   list-style: none;
   background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+ul.breadcrumb:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 ul.breadcrumb li {
@@ -119,6 +129,9 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+
+
+/*/------ PAGE WRAPPERS ------/*/
 
 #wrapper {
   width: 80%;
@@ -150,6 +163,29 @@ ul.breadcrumb li a:hover {
   overflow: auto;
 }
 
+
+/*/------ PAGE COMPONENTS ------/*/
+
+.card {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section .card {
+  height: 400px;
+  margin: 10px !important;
+}
+
+
+/*/------ PRODUCT AND TRAVEL DEALS ------/*/
+
+
 .previous-price {
   color: red;
   font-size: 20px;
@@ -176,25 +212,12 @@ ul.breadcrumb li a:hover {
   color: black;
 }
 
+
+
+/*/------ HELPER CLASSES ------/*/
+
 .row {
   display: inline;
-}
-
-
-.card {
-  margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  background-color: white;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-section .card {
-  height: 400px;
-  margin: 10px !important;
 }
 
 .center {
@@ -205,7 +228,10 @@ section .card {
   padding: 2px 16px;
 }
 
-/* MEDIA QUERIES */
+
+
+
+/*/------ MEDIA QUERIES ------/*/
 
 @media only screen and (max-width: 1024px) {
   body {
