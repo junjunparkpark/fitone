@@ -86,9 +86,17 @@
   </div>
 
   <script>
-    $(document).ready(function () {
-      $("time").html("This page was last modified on: " + document.lastModified);
-    });
+      $(document).ready(function () {
+        $("time").html("This page was last modified on: " + document.lastModified);
+
+        $(".icon").click(function () {
+          if ($("nav").hasClass("responsive")) {
+            $("nav").removeClass("responsive");
+          } else {
+            $("nav").addClass("responsive");
+          }
+        });
+      });
   </script>
 </body>
 </html>
