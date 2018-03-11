@@ -36,23 +36,24 @@
   
     <main>
       <section class="card container">
-        <form class="form-group">
+        <h2>Please fill out every field</h2>
+        <form class="form-group" accept-charset="UTF-8">
           <div class="input-group">
             <label for="deal-name">Name:</label>
             <br/>
-            <input type="text"  placeholder="Name (Max 140 Characters)" name="deal-name" autofocus required>
+            <input type="text"  placeholder="(Max 60 Characters)" maxlength="60" name="deal-name" autofocus required>
           </div>
 
           <div class="input-group">
             <label for="deal-price">Price:</label>
             <br/>
-            <input type="text"  placeholder="Number greater than 0" name="deal-price" required>
+            <input type="number"  placeholder="Number greater than 0" name="deal-price" required>
           </div>
 
           <div class="input-group"> 
             <label for="deal-url">URL to Deal:</label>
             <br/>
-            <input type="text"  placeholder="Valid URL" name="deal-url" required>
+            <input type="url"  placeholder="Valid URL" name="deal-url" required>
           </div>
 
           <div class="input-group">
@@ -79,9 +80,8 @@
             </datalist>
           </div>
       
-          <br/>
           <div class="input-group">
-            <input class="button" type="submit">
+            <input class="button" type="submit" value="Submit Deal">
           </div>
         </form>
       

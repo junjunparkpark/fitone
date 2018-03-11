@@ -30,28 +30,40 @@
   <div id="wrapper">
     <header class="card container">
       <h1>
-        Welcome to BestPrice!
+        Contact Us
       </h1>
     </header>
   
     <main>
-      <figure class="card container center">
-        <img src="https://www.elitefts.com/wp/wp-content/uploads/2014/07/money-fitness-header-072514.jpg" alt="The Money You'd Save Using This Website">
-        <figcaption>The Money You'd Save Using This Website</figcaption>
-      </figure>
-  
-      <section class="card container center">
-        <div>
-          <h2>About Us</h2>
-          <p>
-            This is the
-            <u>BEST</u> place to find the lowest
-            <u>PRICE</u> on the latest and greatest
-            <br/> products and deals from a plethora of retailers all around the internet.
-          </p>
-        </div>
-  
+      <section class="card container">
+        <h2>Please fill out every field</h2>
+        <form class="form-group" accept-charset="UTF-8">
+          
+          <div class="input-group">
+            <label for="deal-name">Name:</label>
+            <br/>
+            <input type="text" placeholder="Name (Max 60 Characters)" name="contact-name" maxlength="50" autofocus required>
+          </div>
+      
+          <div class="input-group">
+            <label for="deal-price">Email:</label>
+            <br/>
+            <input type="email" placeholder="Valid Format: someone@example.com" name="contact-email" required>
+          </div>
+      
+          <div class="input-group">
+            <label for="deal-description">Description:</label>
+            <br/>
+            <textarea name="description" placeholder="Enter a Message (Max 300 Characters)" name="deal-description" rows="5" maxlength="300" required></textarea>
+          </div>
+      
+          <div class="input-group">
+            <input class="button" type="submit" value="Send Message">
+          </div>
+        </form>
+
       </section>
+      
     </main>
     <br/>
   </div>
