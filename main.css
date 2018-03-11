@@ -249,6 +249,34 @@ section .card {
 }
 
 
+.card.intros {
+  width: 48%;
+  float: left;
+  display: inline-block;
+}
+
+.intros p {
+  width: 80%;
+  font-size: 18px;
+  margin: 0 auto;
+  height: auto;
+  
+}
+
+.intros u {
+  font-weight: bold;
+}
+
+.savings-table {
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+th, td {
+  width: 200px;
+  height: 50px;
+}
+
 
 /*/------ HELPER CLASSES ------/*/
 
