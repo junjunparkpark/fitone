@@ -252,7 +252,6 @@ section .card {
 .card.intros {
   width: 48%;
   float: left;
-  display: inline-block;
 }
 
 .intros p {
@@ -293,6 +292,16 @@ th, td {
 }
 
 
+@media only screen and (max-width: 1264px) {
+  .card.intros {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .intros p {
+    font-size: 15px;
+  }
+}
 
 
 /*/------ MEDIA QUERIES ------/*/
@@ -363,6 +372,14 @@ th, td {
 
   .deal-link {
     width: 45%;
+  }
+
+  .savings-table {
+    font-size: 18px !important;
+  }
+
+  .previous-price, .current-price {
+    font-size: 18px !important;
   }
 }
 
@@ -446,6 +463,17 @@ th, td {
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
+
+  .card.intros {
+    width: 95%;
+    margin: 10px auto;
+    float: none;
+    display: block;
+  }
+
+  .card.intros p {
+    font-size: 18px;
+  }
 }
 
 
@@ -463,5 +491,11 @@ th, td {
 
   .deal-link img {
     width: 80px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card.intros p {
+    font-size: 15px;
   }
 }
