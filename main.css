@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  
+  min-height: 100%;
 }
 
 h1 {
@@ -59,13 +59,13 @@ figcaption {
 
 
 footer {
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: 0;
   height: 120px;
   width: 100%;
   overflow: hidden;
-  margin: 0 !important;
+  margin: 0;
   background-color: #333 !important;
   color: #f2f2f2;
   text-align: center;
@@ -190,6 +190,7 @@ label {
   margin-left: auto;
   min-width: 900px;
   max-width: 1280px;
+  height: 100%;
 }
 
 .active {
@@ -457,6 +458,7 @@ th, td {
 
   footer {
     font-size: 12px;
+    position: static;
   }
 
   #wrapper {  
