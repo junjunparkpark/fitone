@@ -37,7 +37,7 @@
     <main>
       <section class="card container">
         <h2>Please fill out every field</h2>
-        <form class="form-group" accept-charset="UTF-8">
+        <form class="form-group" accept-charset="UTF-8" method="post" enctype="multipart/form-data">
           <div class="input-group">
             <label for="deal-name">Name:</label>
             <br/>
@@ -57,9 +57,9 @@
           </div>
 
           <div class="input-group">
-            <label for="deal-image">Upload Image:</label>
+            <label for="deal-image">Upload Image(.png, .jpg or .jpeg files):</label>
             <br/>
-            <input type="file" name="deal-image" required>
+            <input type="file" accept=".png, .jpg, .jpeg" name="deal-image" required>
           </div>
 
           <div class="input-group">

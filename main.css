@@ -424,6 +424,8 @@ section .card {
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 1.5em;
+    padding-top: 1.4em;
+
     padding-left: 0;
   }
 
